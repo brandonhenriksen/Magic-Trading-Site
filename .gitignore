@@ -1,2 +1,5 @@
 ### JETBRAINS IDE ###
 .idea/*
+
+## MAC ##
+.DS_Store
