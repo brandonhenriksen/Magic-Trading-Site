@@ -19,22 +19,36 @@
             <section class="top-bar-section">
                 <!-- Right Nav Section -->
                 <ul class="right">
-                    <li><a href="#">Right Button Active</a></li>
-                    <li class="has-dropdown">
-                        <a href="#">Right Button with Dropdown</a>
-                        <ul class="dropdown">
-                            <li><a href="/register.html">Register</a></li>
-                            <li><a href="/login.html">Login</a></li>
-                        </ul>
+                    <li><a href="#">Register</a></li>
+                    <li class="has-form"> 
+                        <a href="#" data-dropdown="drop2">Log In</a>
+                            <div id="drop2" data-dropdown-content class="f-dropdown content">
+                                <form id="top-nav-login" action="login.xqy" method="post">
+                                    <div class="row">
+                                        <label>Username</label>
+                                        <input type="email" name="email" placeholder="email@example.com" tabindex="1"/>
+                                    </div>
+                                    <div class="row">
+                                        <label>Password</label>
+                                        <input type="password" name="email" placeholder="********" tabindex="2"/>
+                                    </div>
+                                    <div class="row">
+                                        <input type="submit" class="button tiny success" value="Login" tabindex="3"/>
+                                    </div>
+                                </form>
+
                     </li>
                 </ul>
+            
 
                 <!-- Left Nav Section -->
                 <ul class="left">
-                    <li><a href="#">Left Nav Button</a></li>
+                    <li><a href="#">Home</a></li>
                 </ul>
             </section>
         </nav>
+
+        
         <!-- END FOUNDATION NAV BAR-->
 
         <div class="row">
@@ -92,7 +106,7 @@
                         <a href="#" class="button [radius round]">View Listings</a>
                     </div>
                     <div class="columns medium-3">
-                        <img src="images/Cards/Agent-of-the-Fates.xlhq.png" style="height: 125px;float:right;">
+                        <img src="images/Cards/MasterOfWaves.png" style="height: 125px;float:right;">
                     </div>
                 </div>
 
@@ -104,7 +118,7 @@
                         <a href="#" class="button [radius round]">View Listings</a>
                     </div>
                     <div class="columns medium-3">
-                        <img src="images/Cards/Agent-of-the-Fates.xlhq.png" style="height: 125px;float:right;">
+                        <img src="images/Cards/DesecrationDemon.png" style="height: 125px;float:right;">
                     </div>
                 </div>
 
