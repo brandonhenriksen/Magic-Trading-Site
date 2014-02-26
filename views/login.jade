@@ -1,0 +1,42 @@
+doctype html
+html
+    head
+        title
+        link(rel='stylesheet', href='//cdn.jsdelivr.net/foundation/5.1.1/css/foundation.min.css')
+        link(rel='stylesheet', href='foundation.min.css')
+    body
+        //
+           FOUNDATION NAV BAR
+        nav.top-bar(data-topbar='data-topbar')
+            ul.title-area
+                li.name
+                    h1
+                        a(href='#') brandon site
+                li.toggle-topbar.menu-icon
+                    a(href='#') Menu
+            section.top-bar-section
+                //
+                   Right Nav Section
+                ul.right
+                    li
+                        a(href='#') Right Button Active
+                    li.has-dropdown
+                        a(href='#') Right Button with Dropdown
+                        ul.dropdown
+                            li
+                                a(href='/register') Register
+                            li
+                                a(href='/login') Login
+                //
+                   Left Nav Section
+                ul.left
+                    li
+                        a(href='#') Left Nav Button
+        //
+           END FOUNDATION NAV BAR
+        .progress
+            span.meter
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/js/foundation.min.js')
+        script
+            $(document).foundation();

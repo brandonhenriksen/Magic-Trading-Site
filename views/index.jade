@@ -1,0 +1,82 @@
+doctype html
+html
+    head
+        title
+        link(rel='stylesheet', href='//cdn.jsdelivr.net/foundation/5.1.1/css/foundation.min.css')
+    body
+        //
+           FOUNDATION NAV BAR
+        nav.top-bar(data-topbar='data-topbar')
+            ul.title-area
+                li.name
+                    h1
+                        a(href='#') brandon site
+                li.toggle-topbar.menu-icon
+                    a(href='#') Menu
+            section.top-bar-section
+                //
+                   Right Nav Section
+                ul.right
+                    li
+                        a(href='#') Right Button Active
+                    li.has-dropdown
+                        a(href='#') Right Button with Dropdown
+                        ul.dropdown
+                            li
+                                a(href='/register') Register
+                            li
+                                a(href='/login') Login
+                //
+                   Left Nav Section
+                ul.left
+                    li
+                        a(href='#') Left Nav Button
+        //
+           END FOUNDATION NAV BAR
+        .row
+            .columns.medium-6(style='position: fixed;')
+                form
+                    fieldset(style='width: 70%;')
+                        legend Card Name
+                        input(type='text')
+                    img(src='images/mana/redmana.jpeg', style='height: 50px;')
+                    img(src='images/mana/redmana.jpeg', style='height: 50px;')
+                    img(src='images/mana/redmana.jpeg', style='height: 50px;')
+                    img(src='images/mana/redmana.jpeg', style='height: 50px;')
+                    img(src='images/mana/redmana.jpeg', style='height: 50px;')
+                    br
+                    br
+                    a.button(href='#', style='padding: 5px; background-color: black;') common
+                    a.button(href='#', style='padding: 5px; background-color: silver;') uncommon
+                    a.button(href='#', style='padding: 5px; background-color: gold;') rare
+                    a.button(href='#', style='padding: 5px; background-color: red;') mythic
+                    br
+                    br
+                    img(src='images/mana/redmana.jpeg', style='height: 83px;')
+                    img(src='images/mana/redmana.jpeg', style='height: 83px;')
+                    img(src='images/mana/redmana.jpeg', style='height: 83px;')
+            .columns.medium-6
+                .row
+                    .columns.medium-8
+                        p(style='font-size: 1.8em;') Agent of the Fates
+                        p(style='font-size: 1.8em;') Agent of the Fates
+                    .columns.medium-3
+                        img(src='images/Agent-of-the-Fates.xlhq.png', style='height: 125px; float: right;')
+                div(style='height: 2px; background-color: grey; margin: 10px 0;')
+                .row
+                    .columns.medium-8
+                        p(style='font-size: 1.8em;') Agent of the Fates
+                        p(style='font-size: 1.5em; text-align: center; color: green;') price: $15
+                    .columns.medium-3
+                        img(src='images/Agent-of-the-Fates.xlhq.png', style='height: 125px; float: right;')
+                div(style='height: 2px; background-color: grey; margin: 10px 0;')
+                .row
+                    .columns.medium-8
+                        p(style='font-size: 1.8em;') Agent of the Fates
+                        p(style='font-size: 1.8em;') Agent of the Fates
+                    .columns.medium-3
+                        img(src='images/Agent-of-the-Fates.xlhq.png', style='height: 125px; float: right;')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/foundation/5.1.1/js/foundation.min.js')
+        script
+            $(document).foundation();
